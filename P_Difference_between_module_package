@@ -1,0 +1,33 @@
+Difference between Python Module and Package
+
+
+A module is basically a bunch of related code saved in a file with the extension .py. You may choose to define functions, classes, or variables in a module. It’s also fine to include runnable code in modules.
+
+
+
+def welcome_note(course):
+  print("Hi Good Mornining Stundets of " + course + " You will understand the difference between Module and Package")
+  
+  
+  
+  To have this function stored in the module welcome, save this code in a file named welcome.py
+  
+  
+  To use this code in an application, 
+  
+  first import the respective module using the import statement. 
+  
+  Then, ready to use a function defined in this module by calling that function with the module.function() 
+  
+  Example:
+  
+import welcome
+welcome.welcome_note("Python")
+
+
+Output
+Hi Good Mornining Stundets of Python You will understand the difference between Module and Package
+
+#Another way of importing
+
+from welcome import welcome_note
